@@ -1,0 +1,5 @@
+Tim Hortons, 7.89, Food, 2024-05-02,305773;
+Diary Queen, 7.59, Food, 2024-05-03,619093;
+Buffet Party at Sula, 1234.9, Food, 2024-05-01,379212;
+Lunch, 28.91, Food, 2024-05-04,276748;
+FreshSlice, 23.76, Food, 2024-04-08,276460;

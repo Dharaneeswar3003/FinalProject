@@ -1,0 +1,4 @@
+Banana Republic, 57.89, Shopping, 2024-04-09,550380;
+Adidas, 56.78, Shopping, 2024-05-01,791409;
+Hoodie, 34.89, Shopping, 2024-05-02,675412;
+UniQlo, 9.89, Shopping, 2024-04-29,620319;

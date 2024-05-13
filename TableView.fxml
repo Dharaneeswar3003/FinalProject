@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="490.0" prefWidth="571.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tableController">
+   <children>
+      <Pane prefHeight="35.0" prefWidth="500.0">
+         <children>
+            <Label layoutX="14.0" layoutY="9.0" text="Recent Transactions" textFill="#868686">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutY="35.0" prefHeight="50.0" prefWidth="571.0">
+         <children>
+            <Label layoutX="14.0" layoutY="14.0" text="Date Range:" />
+            <DatePicker fx:id="fromDateFilter" layoutX="90.0" layoutY="10.0" />
+            <Label layoutX="250.0" layoutY="14.0" text="to" />
+            <DatePicker fx:id="toDateFilter" layoutX="270.0" layoutY="10.0" />
+         </children>
+      </Pane>
+      <Pane layoutY="85.0" prefHeight="50.0" prefWidth="571.0">
+         <children>
+            <Label layoutX="14.0" layoutY="14.0" text="Filter:" />
+            <CheckBox fx:id="incomeFilter" layoutX="90.0" layoutY="10.0" text="Income" />
+            <CheckBox fx:id="expenseFilter" layoutX="180.0" layoutY="10.0" text="Expenses" />
+            <Label layoutX="290.0" layoutY="14.0" text="Category:" />
+            <ComboBox fx:id="categoryFilter" layoutX="350.0" layoutY="10.0" prefWidth="150.0" />
+         </children>
+      </Pane>
+      <ScrollPane layoutY="135.0" prefHeight="355.0" prefWidth="571.0">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="455.0" prefWidth="570.0">
+               <children>
+                  <TableView fx:id="expenseTable" layoutX="6.0" layoutY="-3.0" prefHeight="462.0" prefWidth="571.0" AnchorPane.leftAnchor="6.0">
+                     <columns>
+                        <TableColumn fx:id="purposeColumn" prefWidth="120.0" text="Purpose" />
+                        <TableColumn fx:id="categoryColumn" prefWidth="100.0" text="Category" />
+                        <TableColumn fx:id="sumColumn" prefWidth="130.0" text="Sum" />
+                        <TableColumn fx:id="dateColumn" prefWidth="120.0" text="Date" />
+                        <TableColumn fx:id="idColumn" prefWidth="180.00003051757812" text="Transaction ID" />
+                     </columns>
+                  </TableView>
+               </children>
+            </AnchorPane>
+         </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>

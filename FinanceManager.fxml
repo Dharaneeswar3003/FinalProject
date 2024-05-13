@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="715.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FinanceManagerController">
+   <children>
+      <BorderPane prefHeight="715.0" prefWidth="1200.0" style="-fx-background-color: #FFFFFF;">
+         <left>
+            <AnchorPane prefHeight="424.0" prefWidth="175.0" style="-fx-background-color: #323A3F;" BorderPane.alignment="CENTER">
+               <children>
+                  <VBox layoutX="-7.0" layoutY="54.0" prefHeight="275.0" prefWidth="175.0">
+                     <children>
+                        <Button fx:id="dashboardButton" mnemonicParsing="false" onAction="#openDashboard" prefHeight="57.0" prefWidth="175.0" style="-fx-background-color: #323A3F;" text="Dashboard" textFill="#acacac">
+                        </Button>
+                        <Button fx:id="addCashButton" mnemonicParsing="false" onAction="#addCash" prefHeight="57.0" prefWidth="175.0" style="-fx-background-color: #323A3F;" text="Add Cash" textFill="#acacac">
+                          </Button>
+                          <Button fx:id="quitButton" mnemonicParsing="false" onAction="#quit" prefHeight="57.0" prefWidth="175.0" style="-fx-background-color: #323A3F;" text="Quit" textFill="#acacac" />
+                     </children>
+                  </VBox>
+                  
+                  <Pane layoutY="-6.0" prefHeight="60.0" prefWidth="175.0" style="-fx-background-color: #00BAFF;">
+                     <children>
+                        <Label layoutX="12.0" layoutY="16.0" prefHeight="28.0" prefWidth="152.0" text="Finance 'lilBro" textFill="WHITE">
+                           <font>
+                              <Font name="Lucida Calligraphy Italic" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+               </children>
+            </AnchorPane>
+         </left>
+         <center>
+            <StackPane fx:id="mainStackPane" prefHeight="440.0" prefWidth="725.0"> 
+         </StackPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>
